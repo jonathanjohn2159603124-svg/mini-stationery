@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombo116 Mini Stationery - Business, ICT, Banking & Travel Services</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #2b6cb0;
+            --accent: #d69e2e;
+            --bg-light: #f7fafc;
+            --text-dark: #2d3748;
+            --text-muted: #4a5568;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: #ffffff;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p.tagline {
+            font-size: 1.2rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        header p.location {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            margin: 0 0 1.5rem 0;
+        }
+
+        .header-contact {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.8rem 1rem;
+            border-radius: 6px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header-contact a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .header-contact a:hover {
+            text-decoration: underline;
+            color: var(--accent);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .intro {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--primary);
+            border-bottom: 3px solid var(--accent);
+            display: inline-block;
+            margin: 2rem auto 1rem auto;
+            padding-bottom: 0.3rem;
+            width: 100%;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .service-card {
+            background: #ffffff;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .service-card h3 {
+            margin-top: 0;
+            color: var(--secondary);
+            font-size: 1.15rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .service-card ul {
+            padding-left: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        .service-card li {
+            margin-bottom: 0.3rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .note-box {
+            background-color: #fffaf0;
+            border-left: 4px solid var(--accent);
+            padding: 0.75rem 1rem;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: #744210;
+        }
+
+        .why-choose-us {
+            background: var(--primary);
+            color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 8px;
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .why-choose-us h2 {
+            color: var(--accent);
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem 1rem;
+            background-color: #0f172a;
+            color: #ffffff;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0.4rem 0;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            .header-contact { flex-direction: column; gap: 0.5rem; }
+            .services-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>KOMBO116 MINI STATIONERY</h1>
+        <p class="tagline">Professional Business, Documentation, Printing, ICT, Banking & Travel Services</p>
+        <p class="location">Location: Kombolopa, Mul Baiyer, Western Highlands Province, Mt. Hagen, Papua New Guinea</p>
+        
+        <div class="header-contact">
+            <span><strong>Call:</strong> <a href="tel:+67571402366">+675 71402366</a> / <a href="tel:+67582336361">+675 82336361</a></span>
+            <span><strong>WhatsApp:</strong> <a href="https://wa.me/67579926247">+675 79926247</a></span>
+            <span><strong>Email:</strong> <a href="mailto:kombo116@gmail.com">kombo116@gmail.com</a></span>
+        </div>
+        <img src="LOGO.png" alt =KOMBO116 MINI STATIONERY LOGO "width="100" length="100">
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Who we are</h2>
+            <p>Welcome to KOMBO116-MINI STATIONERY. Located in Kombolopa, Mul Baiyer District, Western Highlands Province, we are a dedicated, community-based business service hub committed to delivering accessible, reliable, and professional solutions. Our mission is to bridge the gap between essential modern services and our local community, empowering students, individuals, entrepreneurs, and organizations to achieve their operational and administrative goals with ease.   
+
+At KOMBO116-MINI STATIONERY, we pride ourselves on being a comprehensive one-stop service provider. We offer a diverse array of core solutions, including top-quality school and office stationery supplies, document printing, photocopying, scanning, and high-impact graphic design services. Beyond traditional office essentials, we specialize in corporate documentation—such as business profiles, proposals, and official correspondence—alongside specialized ICT support, domestic travel ticketing, and localized agency banking services.   
+
+Driven by a commitment to reliability, affordability, and excellence, we strive to simplify complex administrative tasks while serving as a trusted catalyst for regional growth. Whether you are a student preparing for academic success, a business owner establishing a brand, or an individual seeking dependable everyday digital services, our team is structured to deliver client-focused, efficient solutions under one roof.   
+.</p>
+        </section>
+<main>
+        <section class="intro">
+            <h3>OUR VISSION</h3>
+            <p3> At KOMBO116-MINI STATIONERY, our vision is to become the leading community-focused business service and digital hub in the Western Highlands Province, recognized for bringing modern administrative solutions directly to rural communities. We aim to bridge the rural-urban service gap by providing reliable, affordable, and high-quality solutions that allow every student, business owner, and resident in Mul Baiyer District to access essential tools without needing to travel long distances.
+
+We strive to empower local individuals and organizations through professional capability building. By offering everything from customized graphic design and official documentation to specialized ICT support and corporate proposals, our goal is to inspire local entrepreneurship and elevate the quality of administrative operations across schools, community groups, and small businesses in the region.
+
+Looking toward the future, we envision expanding our service offerings to seamlessly integrate digital and financial access for local communities. Through agency banking, domestic ticketing, and expanded ICT infrastructure, we aspire to be a trusted catalyst for regional progress, driving sustainable socioeconomic growth, digital literacy, and economic inclusion throughout PNG's highlands.</p3>
+        <main>
+        <section class="intro">
+            <h4>OUR MISSION</h4>
+            <P4> At KOMBO116-MINI STATIONERY, our mission is to empower the individuals, students, and businesses of Mul Baiyer District and the broader Western Highlands Province by providing dependable, affordable, and high-quality administrative, digital, and ticketing services. We are dedicated to delivering professional solutions locally, eliminating the need for our clients to undertake costly travel to urban centers for everyday essential business needs.
+
+We strive to support education, foster local commerce, and enhance operational efficiency through top-tier stationery supplies, corporate documentation, graphic design, and specialized ICT support. By consistently maintaining high standards of integrity, customer care, and technical quality, we turn everyday administrative challenges into seamless, accessible experiences for everyone in our community.
+
+Furthermore, we are committed to promoting financial inclusion and regional connectivity by expanding essential services such as agency banking and domestic travel ticketing directly within our community. Through innovation, community engagement, and dedicated client service, we aim to serve as a reliable partner in driving regional development, digital literacy, and sustainable growth across Papua</P4>
+        <H5>OUR SERVICES</H5>
+        <P5> At KOMBO116-MINI STATIONERY, we are committed to providing a comprehensive range of professional, reliable, and affordable services designed to meet the everyday needs of individuals, students, businesses, schools, government offices, churches, and the wider community. As a convenient one-stop service centre, we offer quality stationery supplies, printing and photocopying, document preparation, graphic design, and other essential business support services.
+
+We also provide professional ICT and digital solutions, including computer software installation, system setup and updates, Microsoft 365 and WPS installation, basic troubleshooting, email and online services, document scanning, typing, formatting, and digital application assistance. Through these services, we aim to help our customers access modern technology and professional support in a convenient and efficient manner.
+
+In addition, KOMBO116-MINI STATIONERY provides business support, travel and ticketing assistance, and available banking agency services to serve the growing needs of our customers. Our goal is to deliver convenient, customer-focused, and dependable services at affordable prices while building a trusted reputation as a leading community-based business service centre.</P5>
+</section>
+ <img src="SIGN BOARD.png" alt ="SIGNBOARD " width="550" height="300">
+<img src="bsp.png" alt ="BSP BANKING SYSTEM="250" height="400">
+<img src="AIR NIUGINI.png" alt ="AIR NIUGINI AND PNG AIR ONLINE TICKETING " width="250" height="400">
+<img src="ICT.png" alt ="ICT SOLUTION " width="250" height="400">
+<img src="BUSINESS.png" alt ="BUSINESS REGISTRATION AND CONSULTATION " width="250" height="400">
+<img src="COMPUTER TROUBLE SHOOTING.png" alt ="COMPUTER SOFTWERE TROUBLESHOOTING " width="250" height="400">
+<img src="ID CARD.png" alt ="ID CARD DESIGN " width="250" height="400">
+<img src="WEBPAGE.png" alt ="WEBSITE DEVELOPER " width="250" height="400">
+
+        <!-- Business Registration & Consultancy -->
+        <h2 class="section-title">Business & Documentation Services</h2>
+        <div class="services-grid">
+            
+            <div class="service-card">
+                <h3>1. Business Registration & Consultancy</h3>
+                <p>We assist individuals and entrepreneurs who want to establish and formalise their businesses.</p>
+                <ul>
+                    <li>Business registration assistance</li>
+                    <li>Investment Promotion Authority (IPA) requirements & processes support</li>
+                    <li>Business name registration guidance</li>
+                    <li>Business documentation preparation</li>
+                    <li>Business consultancy & general advice</li>
+                    <li>Guidance for new and existing businesses on improving operations and documentation</li>
+                </ul>
+                <p><strong>Goal:</strong> To help you take the right steps when starting, registering, or developing your business.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>2. Business Letter Writing</h3>
+                <p>We prepare professional, properly formatted, and easy-to-understand letters for businesses, organisations, and individuals.</p>
+                <ul>
+                    <li>Application & request letters</li>
+                    <li>Business correspondence & official notices</li>
+                    <li>Recommendation & introduction letters</li>
+                    <li>Employment-related letters</li>
+                    <li>Complaint & response letters</li>
+                    <li>Sponsorship and support letters</li>
+                    <li>Government and organisational correspondence</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>3. Business Proposals</h3>
+                <p>We prepare professional business proposals for entrepreneurs and organisations seeking to introduce a business idea, request support, or attract potential partners.</p>
+                <ul>
+                    <li>Business background & objectives</li>
+                    <li>Products or services</li>
+                    <li>Target customers & market information</li>
+                    <li>Financial requirements & implementation plans</li>
+                    <li>Expected outcomes</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>4. Project Proposals</h3>
+                <p>We assist individuals, community groups, organisations, and businesses to prepare structured project proposals for submission to companies, government offices, and development partners.</p>
+                <ul>
+                    <li>Project background & problem statement</li>
+                    <li>Project objectives & implementation plan</li>
+                    <li>Budget & expected results</li>
+                    <li>Monitoring, evaluation & sustainability plan</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>5. Company & Business Profile Design</h3>
+                <p>We create professional company and business profiles that present your organisation in a clear and attractive format.</p>
+                <ul>
+                    <li>Company background, vision, & mission</li>
+                    <li>Objectives, products, & services</li>
+                    <li>Management information & contact details</li>
+                    <li>Business experience, achievements, photos & branding</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>6. Business Plan Preparation</h3>
+                <p>We assist entrepreneurs in preparing professional business plans suitable for starting a new venture or developing an existing one.</p>
+                <ul>
+                    <li>Executive summary & business description</li>
+                    <li>Products/services & market analysis</li>
+                    <li>Marketing strategy & operational plan</li>
+                    <li>Management structure & financial plan</li>
+                    <li>Start-up requirements & projections</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>7. Business Account Opening Assistance</h3>
+                <p>We provide assistance with preparing and organising documents required for business account opening with your bank or financial institution.</p>
+                <div class="note-box">Note: Final account approval and opening are determined by the relevant financial institution.</div>
+            </div>
+
+        </div>
+
+        <!-- Printing & Document Services -->
+        <h2 class="section-title">Printing, Photocopying & Document Services</h2>
+        <div class="services-grid">
+
+            <div class="service-card">
+                <h3>8. Document Printing & Photocopying</h3>
+                <p>Quality document printing and photocopying services for individuals, students, businesses, schools, and organisations.</p>
+                <ul>
+                    <li>Black-and-white & Colour printing</li>
+                    <li>Black-and-white & Colour photocopying</li>
+                    <li>Printing from USB drives & digital files</li>
+                    <li>Document reproduction & preparation</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>9. CV Typing & Design</h3>
+                <p>We prepare professional Curriculum Vitae (CVs) and job application documents for job seekers.</p>
+                <ul>
+                    <li>Professional formatting, typing, & editing</li>
+                    <li>Career objective/profile setup</li>
+                    <li>Education, qualifications, & employment history</li>
+                    <li>Skills, experience, & references layout</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>10. ID Card Design & Printing</h3>
+                <p>We design and prepare professional identification cards tailored to your organisation's requirements.</p>
+                <ul>
+                    <li>Church ID cards</li>
+                    <li>Company / employee ID cards</li>
+                    <li>Personal & school/student ID cards</li>
+                    <li>Organisation, membership, event, & access cards</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>11. Business Card Design & Printing</h3>
+                <p>We design professional business cards for individuals, entrepreneurs, employees, and organisations incorporating logos, contact details, location, and social media links.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>12. Invitation Card Design & Printing</h3>
+                <p>We design custom invitation cards for weddings, birthdays, graduation ceremonies, church events, meetings, anniversaries, and community gatherings.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>13. Menu Card Design & Printing</h3>
+                <p>We design professional menu cards for restaurants, food businesses, catering services, and special events with custom layouts and prices.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>14. Typing & Document Preparation</h3>
+                <p>Professional typing services for handwritten notes and digital documents including reports, forms, assignments, meeting documents, tables, and general data entry.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>15. Laminating & Binding</h3>
+                <p>Document finishing services to protect and professionally present your documents.</p>
+                <ul>
+                    <li><strong>Laminating:</strong> Protects from water, dirt, tearing, and wear.</li>
+                    <li><strong>Binding:</strong> Organises multiple pages into a professional booklet.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- ICT & Computer Solutions -->
+        <h2 class="section-title">ICT & Computer Solutions</h2>
+        <div class="services-grid">
+
+            <div class="service-card">
+                <h3>16. Website Development</h3>
+                <p>We design and develop websites for businesses, organisations, community groups, and individuals.</p>
+                <ul>
+                    <li>Company profile & business websites</li>
+                    <li>Service, product, & contact pages</li>
+                    <li>Mobile-friendly website design</li>
+                    <li>Basic maintenance, setup, & publishing</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>17. Computer Programming</h3>
+                <p>Basic computer programming and software-related solutions according to customer requirements.</p>
+                <ul>
+                    <li>Basic custom applications</li>
+                    <li>Website programming</li>
+                    <li>Automated documents & forms</li>
+                    <li>Data-related software solutions</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>18. Software Installation</h3>
+                <p>Assistance with installing and setting up office productivity software, including Microsoft Office and WPS Office (word processing, spreadsheets, presentations, and troubleshooting).</p>
+            </div>
+
+            <div class="service-card">
+                <h3>19. Password Recovery & Account Assistance</h3>
+                <p>Guidance and assistance with basic account and password recovery procedures for email, social media, computers, and online services.</p>
+                <div class="note-box">We only assist with legitimate account recovery and do not bypass security systems or access accounts without authorisation.</div>
+            </div>
+
+            <div class="service-card">
+                <h3>20. Mailing System Setup</h3>
+                <p>Setup and configuration of digital mailing and email systems for businesses and individuals, including email troubleshooting and attachment support.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>21. Computer Troubleshooting</h3>
+                <p>Diagnosing and fixing common problems: slow computers, software/application errors, internet/printer connections, and OS configuration issues.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>22. Computer Setup</h3>
+                <p>Initial setup for new computers, including system configuration, internet setup, software installation, and printer connections.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>23. Driver Installation & Device Setup</h3>
+                <p>Installing and configuring appropriate device drivers for computers, printers, scanners, USB devices, audio devices, and other peripherals.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>24. Graphic Design</h3>
+                <p>Creating professional digital designs for posters, banners, advertisements, flyers, social media graphics, certificates, ID cards, and business cards.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>25. Poster, Banner & Promotional Design</h3>
+                <p>Attractive promotional artwork prepared specifically for Facebook, WhatsApp, physical printing, and community advertising campaigns.</p>
+            </div>
+
+        </div>
+
+        <!-- Banking & Travel Services -->
+        <h2 class="section-title">BSP Banking & Online Ticketing</h2>
+        <div class="services-grid">
+
+            <div class="service-card">
+                <h3>26. BSP Banking Assistance</h3>
+                <p>We provide selected BSP banking services and assistance for eligible customers:</p>
+                <ul>
+                    <li>Cash deposits & cash withdrawals</li>
+                    <li>Account balance enquiries</li>
+                    <li>Payments & basic transaction assistance</li>
+                    <li>Bank statement-related assistance (where available)</li>
+                </ul>
+                <div class="note-box">Important: Subject to BSP requirements, verification procedures, limits, and fees.</div>
+            </div>
+
+            <div class="service-card">
+                <h3>27. Air Niugini & PNG Air Online Ticketing</h3>
+                <p>Online airline ticketing assistance for customers travelling within Papua New Guinea.</p>
+                <ul>
+                    <li>Flight booking & date selection</li>
+                    <li>Fare enquiries & flight information</li>
+                    <li>Passenger booking confirmation</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>28. Flight Booking</h3>
+                <p>Assistance searching for and booking available flights according to your preferred travel dates, destination, and passenger details.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>29. Travel Consultation</h3>
+                <p>Basic travel consultation to help customers understand flight options, available routes, schedules, fare options, and booking requirements.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>30. Ticket Rebooking & Flight Changes</h3>
+                <p>Assistance with eligible ticket changes, travel date modifications, flight rebooking, and ticket reissues according to airline terms.</p>
+            </div>
+
+        </div>
+<br>
+<img src="kombo116-location.jpg.jpg" alt ="KOMBO116 " width="600" height="300">
+<img src="left001-section.jpg.jpg" alt ="LEFT SIDE " width="600" height="300">
+<img src="right02021-road.jpg.jpg" alt ="RIGHT SIDE " width="600" height="300">
+<img src="main1021-road.jpg.jpg" alt ="BASE SECTION " width="600" height="300">
+<img src="location116-area.jpg.jpg" alt ="MAIN ROAD " width="600" height="300">
+        <!-- Why Choose Us -->
+        <section class="why-choose-us">
+            <h2>Why Choose Kombo116 Mini Stationery?</h2>
+            <p>At Kombo116 Mini Stationery, our aim is to provide convenient, reliable, and professional services in one location.</p>
+            <p>Whether you need help starting a business, preparing documents, printing important materials, designing promotional items, solving a computer problem, accessing selected banking services, or booking a flight, we are here to assist.</p>
+            <p><strong>Professional Service • Reliable Support • Convenient Solutions</strong></p>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>KOMBO116 MINI STATIONERY</strong></p>
+        <p>Your Local Partner for Business, Documentation, ICT, Printing, Banking & Travel Services.</p>
+        <p>Kombolopa, Mul Baiyer, Western Highlands Province, Mt. Hagen, Papua New Guinea</p>
+        <p style="margin-top: 1rem;">
+            <strong>Phone:</strong> <a href="tel:+67571402366">+675 71402366</a> / <a href="tel:+67582336361">+675 82336361</a> | 
+            <strong>WhatsApp:</strong> <a href="https://wa.me/67579926247">+675 79926247</a>
+        </p>
+        <p>
+            <strong>Email:</strong> <a href="mailto:kombo116@gmail.com">kombo116@gmail.com</a> / <a href="mailto:jonathanjohn2159603124@gmail.com">jonathanjohn2159603124@gmail.com</a>
+        </p>
+    </footer>
+
+</body>
+</html>
